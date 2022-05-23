@@ -2,8 +2,7 @@ package homework
 
 var avrg = []int64{23, 45, 74, 92, 34, 66}
 var slc1 = avrg[2:5]
-var funky2 = reverse(slc1)
-var _ = funky2
+var _ = reverse(slc1)
 
 func reverse(input []int64) (result []int64) {
 	var slc2 []int64
