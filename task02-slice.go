@@ -1,6 +1,6 @@
-package homework
+package homework1
 
-func homework() {
+func homework1() {
 	var avrg = []int64{23, 45, 74, 92, 34, 66}
 	slc1 := avrg[2:5]
 	reverse(slc1)
