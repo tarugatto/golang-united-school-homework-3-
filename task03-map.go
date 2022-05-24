@@ -1,23 +1,14 @@
 package homework
 
-import "sort"
-
 var mapy = map[int]string{5: "Kim", 2: "Jimmy", 4: "Sara", 1: "Emily", 3: "Steven"}
 var _ = sortMapValues(mapy)
 
 func sortMapValues(input map[int]string) (result []string) {
-	names := make([]int, 0, len(input))
-	for n := range input {
-		names = append(names, n)
+	arr1 := []string{"12", "13", "14", "15", "16"}
+
+	for i := 0; i < len(input); i++ {
+		arr1[i] = input[i+1]
 	}
 
-	sort.Ints(names)
-
-	var arr [6]string
-
-	for i, names := range names {
-		arr[i+1] = input[names]
-	}
-
-	return
+	return arr1
 }
