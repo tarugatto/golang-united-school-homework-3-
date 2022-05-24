@@ -4,7 +4,7 @@ var mapy = map[int]string{5: "Kim", 2: "Jimmy", 4: "Sara", 1: "Emily", 3: "Steve
 var _ = sortMapValues(mapy)
 
 func sortMapValues(input map[int]string) (result []string) {
-	arr1 := []string{"12", "13", "14", "15", "16"}
+	arr1 := make([]string, len(input))
 
 	for i := 0; i < len(input); i++ {
 		arr1[i] = input[i+1]
