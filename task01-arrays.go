@@ -1,6 +1,6 @@
 package homework
 
-var arr = [15]float32{4.5, 8, 3, 7, 1, 6.4, 8, 4, 1, 3, 11, 7.1, 5, 9.6, 1}
+var arr = [15]float32{2.5, 6, 3, 2, 1, 1.4, 3, 4, 1, 3, 3.3, 4.1, 5, 5.2, 1}
 var _ = average(arr)
 
 func average(input [15]float32) (result float32) {
@@ -8,5 +8,5 @@ func average(input [15]float32) (result float32) {
 	for i := 0; i < len(input); i++ {
 		sum += i
 	}
-	return float32(sum)
+	return float32(sum / len(input))
 }
