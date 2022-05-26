@@ -10,7 +10,7 @@ func sortMapValues(input map[int]string) (result []string) {
 		slc[i] = elmnt
 	}
 
-	slc1 := slc[1:]
+	//slc1 := slc[1:]
 
-	return slc1
+	return slc
 }
